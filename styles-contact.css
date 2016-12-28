@@ -1,0 +1,378 @@
+/*This is my 218 CONTACT PAGE using Eric Meyer's reset at the top of my page -- your CSS starts on line 56 */
+
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* This is the beginning of my CONTACT PAGE CSS */
+
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+    color: #fff;
+    background-image: url("images/bg-img.png");
+    background-position: right top; /*Positioning*/
+    background-repeat: no-repeat;
+}
+
+@font-face {
+    font-family: "GTWalsheim";
+    src: url("fonts/gt-walsheim-web.woff")
+}
+
+@font-face {
+    font-family: "GTWalsheim-medium";
+    src: url("fonts/gt-walsheim-medium-web.woff")
+}
+
+@font-face {
+    font-family: "GTWalsheim-bold";
+    src: url("fonts/gt-walsheim-bold-web.woff")
+} 
+
+
+.header {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 90%;;
+    margin: auto;
+    z-index: 100;
+    
+    
+}
+
+.logo {
+    display: inline-block;
+	top: 0;
+    left: 0;
+    height: 72px;
+    width: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.topbar {
+    padding: 40px 90px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.topbar nav {
+    display: inline-block;
+    float: right;
+    padding-top: 40px;
+}
+    
+.topbar li {
+    display: inline-block;
+}
+
+nav a {
+    margin: 10px 0px 0px 30px;
+    color: #76797B;
+}
+
+a {
+    color: #76797B;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+    transition: .6s;
+}
+
+nav {
+    font-family: 'GTWalsheim-bold', sans-serif;
+    font-size: 0.875em;
+    text-transform: uppercase;
+    letter-spacing: 1.7px;
+    width: auto;
+}
+
+.title {
+    display: block;
+    padding: 100px 90px 30px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+h1 {
+    font-family: "GTWalsheim-medium", sans-serif;
+    font-size: 2.25em;
+    color: #76797B;
+}
+
+h2 {
+    font-family: "GTWalsheim", sans-serif;
+    font-size: 1.50em;
+    padding-top: 16px;
+    color: #76797B;
+}
+
+
+.title a.workButton {
+    display: inline-block;
+    position: relative;
+    font-family: 'GTWalsheim', serif;
+    font-size: 16px;
+    color: #76797B;
+    background-color: white;
+    background-clip: padding-box;
+    border: 3px solid transparent;
+    padding: 8px 16px;
+    margin: 80px 0px;
+    border-radius: 24px;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.download-resume a.workButton {
+    display: inline-block;
+    position: relative;
+    font-family: 'GTWalsheim', serif;
+    font-size: 16px;
+    color: #76797B;
+    background-color: white;
+    background-clip: padding-box;
+    border: 3px solid transparent;
+    padding: 8px 16px;
+    margin: 40px 0px;
+    border-radius: 24px;
+    transition: background-color 0.5s ease-in-out;
+}
+
+a.workButton::after {
+    position: absolute;
+    top: -4px; bottom: -4px;
+    left: -4px; right: -4px;
+    background: linear-gradient(135deg, #E2E6F2, #FFF5F5);
+    content: '';
+    z-index: -1;
+    border-radius: 24px;
+}
+
+a.workButton:hover {
+    background-color: transparent;
+}
+
+/* about page css */
+
+.resume-container {
+    display: block;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 100px 90px;
+}
+
+.column-left {
+    width: 20%;
+    float: left;
+}
+
+.column-right {
+    width: 80%;
+    float: right;
+}
+
+.education {
+    display: inline-block;
+    width: 100%;
+}
+
+.related-experience {
+    display: inline-block;
+    width: 100%;
+    padding-top: 3%;
+}
+
+.awards {
+    display: inline-block;
+    width: 100%;
+    padding-top: 3%;
+}
+
+h3 {
+    font-family: "GTWalsheim-bold", sans-serif;
+    font-size: 0.875em;
+    color: #76797B;
+    text-transform: uppercase;
+    letter-spacing: 1.7px;
+    padding-top: 6px;
+    text-align: right;
+    padding-right: 3em;
+}
+
+h4{
+    font-family: "GTWalsheim", sans-serif;
+    font-size: 1.25em;
+    color: #76797B;
+    line-height: 1.4em;
+    padding-bottom: .5%;
+}
+
+h5 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: italic;
+    font-size: 1em;
+    color: #8F9DC6;
+    line-height: 1.4em;
+    padding-bottom: .75%;
+}
+
+p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    color: #76797B;
+    line-height: 1.8em;
+}
+
+ul {
+    padding-left: 18px;
+}
+
+.column-right ul li {
+    color: #76797B;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    line-height: 1.8em;
+    padding-right: 20%;
+}
+
+.skills {
+    display: inline-block;
+    width: 100%;
+    padding-top: 3%;
+    
+}
+
+.column-thirds {
+    width: 22%;
+    display: inline-block;
+    vertical-align: top;
+    float: left;
+}
+
+.skills p {
+    padding-top: 6px;
+}
+
+.column-halves {
+    width: 24%;
+    display: inline-block;
+    vertical-align: top;
+    float: left;
+    padding-right: 10px;
+}
+
+.column-halves h3 {
+    font-style: oblique;
+}
+
+.download-resume {
+    display: block;
+    
+}
+
+.download-resume a {
+    font-family: "GTWalsheim", sans-serif;
+}
+
+/* CONTACT PAGE */
+
+.title p {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 1.15em;
+    padding-top: 2%;
+    
+}
+
+.contact-me a {
+    color: #8F9DC6;
+}
+
+.contact-me a:hover{
+    color: black;
+}
+
+.icons {
+    display: block;
+    padding: 40px 90px 30px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.icons ul {
+    padding-left: 0px;
+}
+
+.icons ul li {
+    display: inline-block;
+    font-size: 1.5em;
+    letter-spacing: .75em;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width:768px) {
+    .topbar nav li {
+        display:block; /* the nav elements will stack on top of one another which allows for a better user experience */
+    }   
+}
