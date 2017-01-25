@@ -532,6 +532,10 @@ img:hover {
     .image-list {
         width: 100%;
     }
+    
+    .project-meta {
+        width: 100%;
+    }
 
 }
 
