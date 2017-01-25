@@ -12,7 +12,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
     <link rel="stylesheet" href="styles-contact.css">
-    <link href="https://fonts.googleapis.com/css?family=Kadwa|Lato" rel="stylesheet">
+    <!-- animsition.css -->
+    <link rel="stylesheet" href="animsition-master/dist/css/animsition.min.css">
+    
 </head>
     <body>
 
@@ -31,43 +33,77 @@
             </ul>
         </nav>
     </header>
-    <div class="title">
-        <h1>Jupyter</h1>        
-    </div>
-        
-    <div class="project-pages">
-        <div class="project-meta">
-            <h4 class="project-title">Website Navigation Bar</h4>
-            <div class="project-description">
-                <p>One of our first projects was to redesign the navigation on the main website. The problem was the original navigation bar had 8 menu items already filling up most of the horizontal space and the team wanted to add more menu items.  We looked at google analytics to analyze which pages were receiving the most traffic and we discussed with our boss which menu items we wanted to increase traffic to. Using this information, we ordered the menu items based upon importance. Some of the original menu item names were misleading as well and we renamed them to be more intuitive.</p>
-                
-                <p>As a team we brainstormed solutions and decided on nested menus. We mocked-up some different versions of the nested menus by grouping different menu items together and user tested them to see which ones were most intuitive. Once we finalized our results, we created a final mockup to be implemented.
-                </p>
-                <br>
-            <h4 class="project-title">JupyterLab</h4>
-                <div class="project-description">
-                <p>Most of our projects were focused on improving JupyterLab. We were given various widgets to work on and improve throughout the summer. Some of them included an Image Widget, a FAQ Page, and JupyterLab’s launcher menu.
-
-                We executed a design driven development process as a team. Each of these widgets required creating user profiles and studying which key features to include in the widget that would accommodate the user best. We conducted user tests to refine our results and finalize the final design.
-                </p>
-                </div>
-
-            </div>
+    
+    <div class="animsition">
+        <div class="title">
+            <h1>Jupyter</h1>        
         </div>
-        <div class="image-list">
-                <p>Original:</p>
-                <img class="project-list-img" src="images/projectItems/original-navbar.png">
-                <p><br>Updated:</p>
-                <img class="project-list-img" src="images/projectItems/updated-navbar.png">
-                <img class="project-list-img" src="images/projectItems/faq.png">
-                <p>Original:</p>
-                <img class="project-list-img" src="images/projectItems/original-launcher.png">
-                <p>Updated:</p>
-                <img class="project-list-img" src="images/projectItems/updated-launcher.png">
-                
+
+        <div class="project-pages">
+            <div class="project-meta">
+                <h4 class="project-title">Website Navigation Bar</h4>
+                <div class="project-description">
+                    <p>One of our first projects was to redesign the navigation on the main website. The problem was the original navigation bar had 8 menu items already filling up most of the horizontal space and the team wanted to add more menu items.  We looked at google analytics to analyze which pages were receiving the most traffic and we discussed with our boss which menu items we wanted to increase traffic to. Using this information, we ordered the menu items based upon importance. Some of the original menu item names were misleading as well and we renamed them to be more intuitive.</p>
+
+                    <p>As a team we brainstormed solutions and decided on nested menus. We mocked-up some different versions of the nested menus by grouping different menu items together and user tested them to see which ones were most intuitive. Once we finalized our results, we created a final mockup to be implemented.
+                    </p>
+                    <br>
+                <h4 class="project-title">JupyterLab</h4>
+                    <div class="project-description">
+                    <p>Most of our projects were focused on improving JupyterLab. We were given various widgets to work on and improve throughout the summer. Some of them included an Image Widget, a FAQ Page, and JupyterLab’s launcher menu.
+
+                    We executed a design driven development process as a team. Each of these widgets required creating user profiles and studying which key features to include in the widget that would accommodate the user best. We conducted user tests to refine our results and finalize the final design.
+                    </p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="image-list">
+                    <p>Original:</p>
+                    <img class="project-list-img" src="images/projectItems/original-navbar.png">
+                    <p><br>Updated:</p>
+                    <img class="project-list-img" src="images/projectItems/updated-navbar.png">
+                    <img class="project-list-img" src="images/projectItems/faq.png">
+                    <p>Original:</p>
+                    <img class="project-list-img" src="images/projectItems/original-launcher.png">
+                    <p>Updated:</p>
+                    <img class="project-list-img" src="images/projectItems/updated-launcher.png">
+
+                </div>
             </div>
         </div>
     
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- animsition.js -->
+    <script src="animsition-master/dist/js/animsition.min.js"></script>
+        
+    <script>
+        $(document).ready(function() {
+        $('.animsition').animsition({
+            inClass: 'fade-in',
+            outClass: 'fade-out',
+            inDuration: 1500,
+            outDuration: 800,
+            linkElement: '.animsition-link',
+            // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+            loading: true,
+            loadingParentElement: 'body', //animsition wrapper element
+            loadingClass: 'animsition-loading',
+            loadingInner: '', // e.g '<img src="loading.svg" />'
+            timeout: false,
+            timeoutCountdown: 5000,
+            onLoadEvent: true,
+            browser: [ 'animation-duration', '-webkit-animation-duration'],
+            // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+            // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+            overlay : false,
+            overlayClass : 'animsition-overlay-slide',
+            overlayParentElement : 'body',
+            transition: function(url){ window.location.href = url; }
+            });
+        });
+    </script>
     
     </body>
 </html>

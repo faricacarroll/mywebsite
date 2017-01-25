@@ -12,7 +12,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
     <link rel="stylesheet" href="styles-contact.css">
-    <link href="https://fonts.googleapis.com/css?family=Kadwa|Lato" rel="stylesheet">
+    <link rel="stylesheet" href="animsition-master/dist/css/animsition.min.css">
+
+
 </head>
     <body>
 
@@ -31,58 +33,94 @@
             </ul>
         </nav>
     </header>
-    <div class="title">
-        <h1>Projects</h1>        
+    
+    <div class="animsition">
+        <div class="title">
+            <h1>Projects</h1>        
+        </div>
+
+        <div class="projects">
+            <div class="project-item">
+                <div class="col-1">
+                    <a class="animation-link" href="jupyter.html">
+                    <img class="project-img" src="images/jupyter.png">
+                    </a>
+                    <h4>Jupyter</h4>
+                </div>
+            </div>
+            <div class="project-item">
+                <div class="col-2">
+                    <a class="animation-link" href="jupyter-brandguide.html">
+                    <img class="project-img" src="images/jupyter-brandbook.png">
+                    </a>
+                    <h4>Jupyter Brand Guide Book</h4>
+                </div>
+            </div>
+            <div class="project-item">
+                <div class="col-1">
+                    <a class="animation-link" href="inzopa.html">
+                    <img class="project-img" src="images/imac-inzopa.png">
+                    </a>
+                    <h4>Inzopa</h4>
+                </div>
+            </div>
+            <div class="project-item">
+                <div class="col-2">
+                    <a class="animation-link" href="gogo.html">
+                    <img class="project-img" src="images/gogo.png">
+                    </a>
+                    <h4>GoGo</h4>
+                </div>
+            </div>
+            <div class="project-item">
+                <div class="col-1">
+                    <a class="animation-link" href="jorli.html">
+                    <img class="project-img" src="images/jorli.png">
+                    </a>
+                    <h4>Jorli</h4>
+                </div>
+            </div>
+            <div class="project-item">
+                <div class="col-2">
+                    <a class="animation-link" href="hf.html">
+                    <img class="project-img" src="images/hf.png">
+                    </a>
+                    <h4>Hackers / Founders</h4>
+                </div>
+            </div>
+        </div>
     </div>
-        
-    <div class="projects">
-        <div class="project-item">
-            <div class="col-1">
-                <a class="animation-link" href="jupyter.html">
-                <img class="project-img" src="images/jupyter.png">
-                </a>
-                <h4>Jupyter</h4>
-            </div>
-        </div>
-        <div class="project-item">
-            <div class="col-2">
-                <a class="animation-link" href="jupyter-brandguide.html">
-                <img class="project-img" src="images/jupyter-brandbook.png">
-                </a>
-                <h4>Jupyter Brand Guide Book</h4>
-            </div>
-        </div>
-        <div class="project-item">
-            <div class="col-1">
-                <a class="animation-link" href="inzopa.html">
-                <img class="project-img" src="images/imac-inzopa.png">
-                </a>
-                <h4>Inzopa</h4>
-            </div>
-        </div>
-        <div class="project-item">
-            <div class="col-2">
-                <a class="animation-link" href="gogo.html">
-                <img class="project-img" src="images/gogo.png">
-                </a>
-                <h4>GoGo</h4>
-            </div>
-        </div>
-        <div class="project-item">
-            <div class="col-1">
-                <a class="animation-link" href="jorli.html">
-                <img class="project-img" src="images/jorli.png">
-                </a>
-                <h4>Jorli</h4>
-            </div>
-        </div>
-        <div class="project-item">
-            <div class="col-2">
-                <a class="animation-link" href="hf.html">
-                <img class="project-img" src="images/hf.png">
-                </a>
-                <h4>Hackers / Founders</h4>
-            </div>
-        </div>
-    </div>
-    </body>
+    
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- animsition.js -->
+    <script src="animsition-master/dist/js/animsition.min.js"></script>
+    
+    <script>
+        $(document).ready(function() {
+        $('.animsition').animsition({
+            inClass: 'fade-in',
+            outClass: 'fade-out',
+            inDuration: 1500,
+            outDuration: 800,
+            linkElement: '.animsition-link',
+            // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+            loading: true,
+            loadingParentElement: 'body', //animsition wrapper element
+            loadingClass: 'animsition-loading',
+            loadingInner: '', // e.g '<img src="loading.svg" />'
+            timeout: false,
+            timeoutCountdown: 5000,
+            onLoadEvent: true,
+            browser: [ 'animation-duration', '-webkit-animation-duration'],
+            // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+            // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+            overlay : false,
+            overlayClass : 'animsition-overlay-slide',
+            overlayParentElement : 'body',
+            transition: function(url){ window.location.href = url; }
+          });
+        });
+    </script>
+</body>
+</html>
