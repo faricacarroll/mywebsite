@@ -415,9 +415,8 @@ img:hover {
 
 /* PROJECT ITEM PAGES */
 
-#project-pages {
+.project-pages {
     display: block;
-    width: 100%;
     max-width: 1100px;
     margin: 3% auto;
     align-content: center;
@@ -475,9 +474,6 @@ img:hover {
         background-size: 600px;
     } 
     
-    #project-pages {
-        padding: 20px;
-    }
     
     .topbar {
         padding: 40px 40px;
@@ -512,6 +508,31 @@ img:hover {
         margin-right: 0px;
     }
     
+/* CONTACT PAGE */
+    
+    .icons {
+        padding: 40px 40px 30px;
+    }
+    
+    .title p {
+        padding-top: 2.5%;
+    }   
+
+
+/* INDIVIDUAL PROJECT PAGE */
+
+    img.project-list-img {
+        width: 100%;
+    } 
+    
+    .project-pages {
+        padding: 20px 40px;
+    }
+    
+    .image-list {
+        width: 100%;
+    }
+
 }
 
 @media (max-width: 509px) {
@@ -534,6 +555,8 @@ img:hover {
     body {
         background-size: 400px;
     }
+    
+/* INDIVIDUAL PROJECT PAGE */
     
     .project-meta {
         display: block;
