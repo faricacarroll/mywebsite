@@ -258,6 +258,7 @@ h3 {
     padding-top: 6px;
     text-align: right;
     padding-right: 3em;
+    line-height: 1.4em;
 }
 
 h4{
@@ -385,7 +386,7 @@ ul {
 }
 
 .project-item .col-1 {
-    margin-right: 20px;
+    margin-right: 36px;
 }
 
 .project-item h4 {
@@ -465,6 +466,11 @@ img:hover {
         height: 62px;
     }
     
+    .title {
+        padding: 30px 40px 30px;
+    }
+    
+    
     body {
         background-size: 600px;
     } 
@@ -473,9 +479,44 @@ img:hover {
         padding: 20px;
     }
     
+    .topbar {
+        padding: 40px 40px;
+    }
+   
+    
+/* ABOUT PAGE */
+    
+    .column-left {
+        width: 100%;
+        float: left;
+        padding-bottom: 8px;
+    }
+    
+    .column-left h3 {
+        float: left;
+    }
+    
+    .column-right {
+        width: 100%;
+        float: left;
+    }
+    
+    .resume-container {
+        width: auto;
+        padding: 20px 40px;
+    }
+    
+/* PROJECT PAGE */
+    
+    .project-item .col-1 {
+        margin-right: 0px;
+    }
+    
 }
 
 @media (max-width: 509px) {
+
+/* INDEX PAGE */    
     .topbar nav {
         padding-top: 24px
     }
@@ -485,9 +526,6 @@ img:hover {
         padding-bottom: 8px;
     }
     
-    .title {
-        padding-top: 30px;
-    }
     
     h1 {
         font-size: 2em;
@@ -502,6 +540,24 @@ img:hover {
         width: 100%;
         margin-right: 0;
         padding-right: 20px;
+    }
+    
+/* ABOUT PAGE */
+    
+    .column-thirds {
+        width: 33%;
+    }
+    
+    .column-right ul li {
+        padding-right: 0;
+    }
+    
+    .column-halves {
+        width: 42%;
+    }
+    
+    h4 {
+        padding-bottom: 2%;
     }
     
     
