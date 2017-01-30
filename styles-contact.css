@@ -422,6 +422,7 @@ img:hover {
     align-content: center;
     padding: 0 100px 0 100px;
     position: relative;
+    overflow: hidden;
 }
 
 .project-meta {
@@ -452,6 +453,26 @@ img:hover {
     width: 100%;
     max-width: 660px;
     padding-bottom: 8%;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    max-width: 1100px;
+    margin: 3% auto;
+    padding: 0 100px 0 100px;
+    position: relative;
+    overflow: hidden;
+}
+
+.projectNav {
+    float: right;
+}
+
+.projectlink {
+    font-family: 'GTWalsheim-medium', sans-serif;
+    font-size: 1em;
 }
 
 /* MEDIA QUERIES */
@@ -502,7 +523,7 @@ img:hover {
         padding: 20px 40px;
     }
     
-/* PROJECT PAGE */
+/* WORKS PAGE */
     
     .project-item .col-1 {
         margin-right: 0px;
@@ -535,6 +556,10 @@ img:hover {
     
     .project-meta {
         width: 100%;
+    }
+    
+    #footer {
+        padding: 20px 40px;
     }
 
 }
