@@ -230,6 +230,7 @@ a.workButton:hover {
 
 .headshot img {
     padding-left: px;
+    
 }
 
 .column-left {
@@ -418,7 +419,7 @@ img {
     max-width: 100%;
 }
 
-img:hover {
+.projects img:hover {
     opacity: .8;
     
 }
@@ -483,6 +484,10 @@ img:hover {
 .projectlink {
     font-family: 'GTWalsheim-medium', sans-serif;
     font-size: 1em;
+}
+
+.project-description span {
+    color: black;
 }
 
 /* MEDIA QUERIES */
