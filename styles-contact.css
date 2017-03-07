@@ -222,6 +222,16 @@ a.workButton:hover {
     padding: 100px 90px;
 }
 
+.headshot {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 90px;
+}
+
+.headshot img {
+    padding-left: px;
+}
+
 .column-left {
     width: 20%;
     float: left;
