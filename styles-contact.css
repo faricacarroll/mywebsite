@@ -212,7 +212,7 @@ a.workButton:hover {
     background-color: transparent;
 }
 
-/* about page css */
+/* resume page css */
 
 .resume-container {
     display: block;
@@ -220,17 +220,6 @@ a.workButton:hover {
     max-width: 1100px;
     margin: 0 auto;
     padding: 100px 90px;
-}
-
-.headshot {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 90px;
-}
-
-.headshot img {
-    padding-left: px;
-    
 }
 
 .column-left {
@@ -346,6 +335,24 @@ ul {
 .download-resume a {
     font-family: "GTWalsheim", sans-serif;
 }
+
+/* ABOUT PAGE */
+
+.aboutme {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 90px;
+}
+
+.aboutme-text {
+    display: inline-block;
+    vertical-align: top;
+    margin: auto;
+    padding-left: 2em;
+    max-width: 23em;
+}
+
+
 
 /* CONTACT PAGE */
 
@@ -492,6 +499,21 @@ img {
 
 /* MEDIA QUERIES */
 
+@media (max-width:1220px) {
+    
+    .aboutme img {
+        max-width: 30em;
+    }
+}
+
+@media (max-width: 1064px) {
+    
+    .aboutme-text {
+        padding: 2em 0em;
+        max-width: 30em;
+    }
+}
+
 @media (max-width:768px) {
     .topbar nav li {
         display:
@@ -514,9 +536,14 @@ img {
     .topbar {
         padding: 40px 40px;
     }
-   
-    
+
 /* ABOUT PAGE */
+    
+    .aboutme img {
+        width: 35em;
+    }
+    
+/* RESUME PAGE */
     
     .column-left {
         width: 100%;
@@ -609,7 +636,7 @@ img {
         padding-right: 20px;
     }
     
-/* ABOUT PAGE */
+/* RESUME PAGE */
     
     .column-thirds {
         width: 33%;
@@ -627,5 +654,14 @@ img {
         padding-bottom: 2%;
     }
     
+/* ABOUT ME */
+    
+    .aboutme img {
+        max-width: 18em;
+    }
+    
+    .aboutme {
+        padding: 0 3em;
+    }
     
 }
