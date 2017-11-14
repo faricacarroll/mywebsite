@@ -149,7 +149,7 @@ nav {
 
 .title {
     display: block;
-    padding: 100px 90px 30px;
+    padding: 3em 2em 1em;
     max-width: 1100px;
     margin: auto;
 }
@@ -309,6 +309,7 @@ ul {
     display: inline-block;
     vertical-align: top;
     float: left;
+    padding-right: 2em;
 }
 
 .skills p {
@@ -338,18 +339,24 @@ ul {
 
 /* ABOUT PAGE */
 
+
 .aboutme {
     max-width: 1100px;
     margin: 0 auto;
-    padding: 0 90px;
+    padding: 3% 90px;
+}
+
+.aboutme img {
+    display: inline-block;
+    max-width: 35em;
 }
 
 .aboutme-text {
     display: inline-block;
     vertical-align: top;
     margin: auto;
-    padding-left: 2em;
-    max-width: 23em;
+    padding-right: 4em;
+    max-width: 25em;
 }
 
 
