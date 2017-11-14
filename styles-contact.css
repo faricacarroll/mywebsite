@@ -278,6 +278,14 @@ h5 {
     padding-bottom: .75%;
 }
 
+h6 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+    color: #76797B;
+    padding-bottom: .75%;
+    font-style: italic;
+}
+
 p {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 15px;
