@@ -480,6 +480,21 @@ img {
     padding-bottom: 8%;
 }
 
+.image-list .owili-images {
+    max-width: 600px;
+    padding-bottom: 0;
+}
+
+.image-list .map-images {
+    max-width: 600px;
+    padding-top: 8%;
+}
+
+.image-list .map-images-2 {
+    image-orientation: flip;
+    max-width: 600px;
+}
+
 #footer {
     position: absolute;
     bottom: 0;
