@@ -155,7 +155,7 @@ nav {
 }
 
 h1 {
-    font-family: "GTWalsheim-medium", sans-serif;
+    font-family: "GTWalsheim", sans-serif;
     font-size: 2.25em;
     color: #76797B;
 }
@@ -171,8 +171,10 @@ h2 {
 .title a.workButton {
     display: inline-block;
     position: relative;
-    font-family: 'GTWalsheim', serif;
-    font-size: 16px;
+    font-family: 'GTWalsheim-bold', serif;
+    font-size: 0.75em;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
     color: #76797B;
     background-color: white;
     background-clip: padding-box;
@@ -186,8 +188,10 @@ h2 {
 .download-resume a.workButton {
     display: inline-block;
     position: relative;
-    font-family: 'GTWalsheim', serif;
-    font-size: 16px;
+    font-family: 'GTWalsheim-bold', serif;
+    font-size: 0.75em;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
     color: #76797B;
     background-color: white;
     background-clip: padding-box;
@@ -285,6 +289,14 @@ h6 {
     padding-bottom: .75%;
     line-height: 1.4em;
     font-style: italic;
+}
+
+h7 {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 1.25em;
+    color: #76797B;
+    line-height: 1.4em;
+    padding-bottom: .5%;
 }
 
 p {
@@ -471,7 +483,15 @@ img {
 }
 
 .project-title {
-    margin-bottom: 1em;
+    margin-bottom: .75em;
+}
+
+.project-title h4 {
+    padding-bottom: .5em;
+}
+
+.project-title h3 {
+    text-align: inherit;
 }
 
 .image-list {
